@@ -1,4 +1,4 @@
-module github.com/chocological13/tech-stream/proto
+module github.com/chocological13/tech-stream-proto
 
 go 1.24.2
 

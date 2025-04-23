@@ -3,8 +3,8 @@ package main
 import (
 	"context"
 	"errors"
-	"github.com/chocological13/tech-stream/api-gateway/internal/config"
-	"github.com/chocological13/tech-stream/api-gateway/internal/middleware"
+	"github.com/chocological13/tech-stream-api-gateway/internal/config"
+	"github.com/chocological13/tech-stream-api-gateway/internal/middleware"
 	"github.com/gin-gonic/gin"
 	log "github.com/sirupsen/logrus"
 	"net/http"
