@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c772fb4-ed86-40c0-a84e-b56eda9a0784" name="Changes" comment="feat(user-service): partial set up for main func&#10;&#10;- set up config load, db and redis connect, and run migrations&#10;- still WIP for server set up">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/tech-stream.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+    <list default="true" id="7c772fb4-ed86-40c0-a84e-b56eda9a0784" name="Changes" comment="feat(api-gateway): add initial API gateway structure">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,6 +57,11 @@
     "settings.editor.selected.configurable": "go.vgo"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\strwbry\Documents\Workspaces\Go\tech-stream" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -93,7 +96,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat(user-service): partial set up for main func&#10;&#10;- set up config load, db and redis connect, and run migrations&#10;- still WIP for server set up" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(user-service): partial set up for main func&#10;&#10;- set up config load, db and redis connect, and run migrations&#10;- still WIP for server set up" />
+    <MESSAGE value="feat(api-gateway): add initial API gateway structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(api-gateway): add initial API gateway structure" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
