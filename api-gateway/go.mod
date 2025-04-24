@@ -1,4 +1,4 @@
-module github.com/chocological13/tech-stream-api-gateway
+module github.com/chocological13/tech-stream/api-gateway
 
 go 1.24.2
 

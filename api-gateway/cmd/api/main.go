@@ -3,8 +3,10 @@ package main
 import (
 	"context"
 	"errors"
-	"github.com/chocological13/tech-stream-api-gateway/internal/config"
-	"github.com/chocological13/tech-stream-api-gateway/internal/middleware"
+	"github.com/chocological13/tech-stream/api-gateway/internal/client"
+	"github.com/chocological13/tech-stream/api-gateway/internal/config"
+	"github.com/chocological13/tech-stream/api-gateway/internal/handlers"
+	"github.com/chocological13/tech-stream/api-gateway/internal/middleware"
 	"github.com/gin-gonic/gin"
 	log "github.com/sirupsen/logrus"
 	"net/http"
@@ -20,8 +22,13 @@ func main() {
 	}
 
 	// TODO : initialize clients
+	userClient, err := client.NewUserClient(cfg.UserServiceAddress)
+	if err != nil {
+		log.Fatalf("Error creating user client: %v", err)
+	}
 
 	// TODO : initialize handlers
+	authHandler := handlers.NewAuthHandler(userClient)
 
 	// Setup router
 	r := gin.Default()
@@ -39,6 +46,21 @@ func main() {
 	})
 
 	// TODO : setup routes
+	api := r.Group("/api/v1")
+	{
+		// Auth routes
+		auth := api.Group("/auth")
+		{
+			auth.POST("/register", authHandler.Register)
+		}
+
+		// Protected routes
+		protected := api.Group("/")
+		protected.Use(middleware.AuthMiddleware())
+		{
+			// TODO : add protected routes
+		}
+	}
 
 	// Create server
 	srv := &http.Server{

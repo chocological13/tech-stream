@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c772fb4-ed86-40c0-a84e-b56eda9a0784" name="Changes" comment="feat(api-gateway): add initial API gateway structure">
+    <list default="true" id="7c772fb4-ed86-40c0-a84e-b56eda9a0784" name="Changes" comment="chore(api-gateway): change module names">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/cmd/api/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/cmd/api/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-gateway/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proto/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/proto/go.mod" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +101,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat(user-service): partial set up for main func&#10;&#10;- set up config load, db and redis connect, and run migrations&#10;- still WIP for server set up" />
     <MESSAGE value="feat(api-gateway): add initial API gateway structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(api-gateway): add initial API gateway structure" />
+    <MESSAGE value="chore(api-gateway): change module names" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore(api-gateway): change module names" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
